@@ -1,0 +1,73 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("office.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.main-menu {
+	text-align: center;
+	background-color: rgb(64,34,37,0.8);
+}
+.main-menu ul{
+	color: white;
+	list-style: none;
+	display: inline-flex;
+}
+.main-menu ul li {
+	padding: 20px 10px;
+	margin: 0px 16px;
+	width: 120px;
+}
+.main-menu ul li a {
+	color: white;
+	text-decoration: none;
+}
+.active, .main-menu ul li:hover {
+	background-color: rgb(100,50,37);
+	border-radius: 3px;
+}
+.main-menu .fa {
+	margin-right: 10px;
+	}
+.sub-menu {
+	display: none;
+}
+.main-menu ul li:hover .sub-menu {
+	display: block;
+	position: absolute;
+	background-color: rgb(64,34,37);
+	margin-left: -26px;
+	margin-top: 18px;
+}
+.main-menu ul li:hover .sub-menu ul{
+	display: block;
+	margin: 15px 0px 15px 0px;
+
+}
+.fa-angle-double-right {
+	margin-left: 15px;
+}
+.sub-menu-2{
+	display: none;
+}
+
+.premium:hover .sub-menu-2{
+	background-color: rgb(64,34,37);
+	display:  block;
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 120px;
+}
+.sub-menu-2 ul li{
+	border-bottom: 1px solid white;
+	padding: 15px;
+	margin-top: 0px;
+
+}
